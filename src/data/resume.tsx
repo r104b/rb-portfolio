@@ -145,7 +145,7 @@ export const DATA = {
       start: "May 2025",
       end: "Current",
       description:
-        "Helped assimilate new university engineering students to TMU through weeklong campus tours, activities, and networking.",
+        "Helped integrate new university engineering students to TMU through weeklong campus tours, activities, and networking.",
     },
     {
       company: "Nottinghill Family Wellness Centre",
