@@ -11,6 +11,18 @@ import { DATA } from "@/data/resume";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+type WorkItem = {
+  company: string;
+  href: string;
+  badges: readonly unknown[];
+  location: string;
+  title: string;
+  logoUrl: string;
+  start: string;
+  end?: string;
+  description: string;
+};
+
 function LogoImage({ src, alt }: { src: string; alt: string }) {
   const [imageError, setImageError] = useState(false);
 
@@ -30,10 +42,10 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
   );
 }
 
-export default function WorkSection() {
+export default function WorkSection({ items = DATA.work }: { items?: readonly WorkItem[] }) {
   return (
     <Accordion type="single" collapsible className="w-full grid gap-6">
-      {DATA.work.map((work) => (
+      {items.map((work) => (
         <AccordionItem
           key={work.company}
           value={work.company}

@@ -33,9 +33,9 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
-              <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
+              <Avatar className="size-24 md:size-32 border rounded-md shadow-lg ring-4 ring-muted">
+                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} className="object-cover" />
+                <AvatarFallback className="rounded-md">{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
@@ -62,6 +62,12 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
             <WorkSection />
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 6.5}>
+            <h2 className="text-xl font-bold">Volunteering Experience</h2>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <WorkSection items={DATA.volunteering} />
           </BlurFade>
         </div>
       </section>
