@@ -5,6 +5,7 @@ import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { TwinklingStars } from "@/components/twinkling-stars";
 import "./globals.css";
 
 const geist = Geist({
@@ -69,9 +70,10 @@ export default function RootLayout({
           geistMono.variable
         )}
       >
+        <TwinklingStars />
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
-            <div className="relative z-10 max-w-2xl mx-auto py-12 pb-24 sm:py-24 px-6">
+            <div className="relative z-10 max-w-2xl mx-auto py-12 pb-24 sm:py-24 px-6 bg-background/95">
               {children}
             </div>
             <Navbar />
