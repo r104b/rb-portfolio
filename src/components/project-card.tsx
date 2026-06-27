@@ -8,7 +8,15 @@ import Link from "next/link";
 import { useState } from "react";
 import Markdown from "react-markdown";
 
-function ProjectImage({ src, alt }: { src: string; alt: string }) {
+function ProjectImage({
+  src,
+  alt,
+  contain = false,
+}: {
+  src: string;
+  alt: string;
+  contain?: boolean;
+}) {
   const [imageError, setImageError] = useState(false);
 
   if (!src || imageError) {
@@ -19,7 +27,10 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
     <img
       src={src}
       alt={alt}
-      className="w-full h-48 object-cover"
+      className={cn(
+        "w-full h-48",
+        contain ? "object-contain bg-black p-2" : "object-cover"
+      )}
       onError={() => setImageError(true)}
     />
   );
@@ -78,7 +89,11 @@ export function ProjectCard({
               className="w-full h-48 object-cover"
             />
           ) : image ? (
-            <ProjectImage src={image} alt={title} />
+            <ProjectImage
+              src={image}
+              alt={title}
+              contain={title.toLowerCase().includes("pocket player")}
+            />
           ) : (
             <div className="w-full h-48 bg-muted" />
           )}

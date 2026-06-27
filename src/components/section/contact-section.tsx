@@ -14,8 +14,8 @@ export default function ContactSection() {
           Want to chat? Send me an email{" "}
           <span className="font-medium text-foreground">
             at {DATA.contact.email}
-          </span>{" "}
-          and I&apos;ll respond whenever I can.
+          </span>{""}
+        .
         </p>
       </div>
     </div>

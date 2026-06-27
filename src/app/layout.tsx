@@ -73,7 +73,7 @@ export default function RootLayout({
         <TwinklingStars />
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
-            <div className="relative z-10 max-w-2xl mx-auto py-12 pb-24 sm:py-24 px-6 bg-background/95">
+            <div className="relative z-10 max-w-4xl mx-auto py-12 pb-24 sm:py-24 px-6 bg-background/95">
               {children}
             </div>
             <Navbar />

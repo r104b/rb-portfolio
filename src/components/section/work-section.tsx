@@ -42,7 +42,13 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
   );
 }
 
-export default function WorkSection({ items = DATA.work }: { items?: readonly WorkItem[] }) {
+export default function WorkSection({
+  items = DATA.work,
+  showLocation = true,
+}: {
+  items?: readonly WorkItem[];
+  showLocation?: boolean;
+}) {
   return (
     <Accordion type="single" collapsible className="w-full grid gap-6">
       {items.map((work) => (
@@ -79,6 +85,11 @@ export default function WorkSection({ items = DATA.work }: { items?: readonly Wo
                   <div className="font-sans text-sm text-muted-foreground">
                     {work.title}
                   </div>
+                  {showLocation && (
+                    <div className="font-sans text-xs text-muted-foreground">
+                      {work.location}
+                    </div>
+                  )}
                 </div>
               </div>
               <div className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground text-right flex-none">
