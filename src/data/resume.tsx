@@ -36,7 +36,7 @@ export const DATA = {
   location: "Toronto, ON",
   locationLink: "https://www.google.com/maps/place/toronto",
   description:
-    "Software Engineering student, current BA Intern @ BMO. Interested in Full-Stack Development.",
+    "Software Engineering student, current Tech Analyst Intern @ BMO. Interested in Full-Stack Development.",
   summary:
     "I love building, designing, and making random personal projects. My interests lie in full‑stack web/app development and exploring cloud engineering. ",
   avatarUrl: "/IMG_3416.jpg",
@@ -90,12 +90,46 @@ export const DATA = {
       href: "",
       badges: [],
       location: "Toronto, ON",
-      title: "Business Analyst Intern",
       logoUrl: "/Screenshot 2026-06-26 105906.png",
-      start: "May 2026",
-      end: "Current",
+      positions: [
+        {
+          title: "Technical Analyst Intern",
+          start: "September 2026",
+          end: "Present",
+          description: "",
+        },
+        {
+          title: "Business Analyst Intern",
+          start: "May 2026",
+          end: "Aug 2026",
+          description:
+            "Created onboarding and process documentation in Confluence used across multiple T&O teams supporting Amazon Connect applications. Supported an AI call intelligence project by preparing HLRD documentation and organizing data from SharePoint, Power BI, and Confluence. Collaborated with QA and development teams to streamline testing workflows. Worked with AI-assisted development tools, including Claude Opus and GitHub Copilot agents, to analyze error logs. Supported Amazon Connect POC workflows by creating calls, processing call data through AWS Bedrock and feeding results into Power BI to produce and review analytics.",
+        },
+      ],
+    },
+    {
+      company: "AWS Student Builder Group TMU",
+      href: "",
+      badges: [],
+      location: "Toronto, ON",
+      title: "Tech Team Member",
+      logoUrl: "/aws-sbg.png",
+      start: "August 2026",
+      end: "Present",
+      description: "",
+    },
+    {
+      company: "BYTE",
+      href: "",
+      badges: [],
+      location: "Toronto, ON",
+      title: "Full-stack developer",
+      logoUrl: "/byte_logo.png",
+      logoClassName: "bg-black",
+      start: "June 2026",
+      end: "Present",
       description:
-        "Created onboarding and process documentation in Confluence used across multiple T&O teams supporting Amazon Connect applications. Supported an AI call intelligence project by preparing HLRD documentation and organizing data from SharePoint, Power BI, and Confluence. Collaborated with QA and development teams to streamline testing workflows. Worked with AI-assisted development tools, including Claude Opus and GitHub Copilot agents, to analyze error logs. Supported Amazon Connect POC workflows by creating calls, processing call data through AWS Bedrock and feeding results into Power BI to produce and review analytics.",
+        "- Developed React, TypeScript, and Tailwind CSS features, including a scrolling sponsor marquee, client-side debug logging for user interactions, and fixes for UI interaction bugs for the company website.\n- Built cloud infrastructure for a containerized CTF platform on a DigitalOcean Ubuntu Droplet using Docker Compose, Caddy, CTFd, MariaDB, Redis, Python, DNS, and HTTPS to deploy and route cybersecurity challenges.",
     },
     {
       company: "TMUWave",
@@ -105,7 +139,7 @@ export const DATA = {
       title: "Software Lead",
       logoUrl: "/Screenshot 2026-06-26 111000.png",
       start: "Jan 2026",
-      end: "Current",
+      end: "Sept 2026",
       description:
         "Lead AUV software development using Raspberry Pi, Pixhawk 6X, and Python. Manage GitHub repositories, pull requests, branching, and documentation across a 6-member team. Develop a Docker-based simulation environment that uses QGroundControl, ArduSub, MAVLink, and PyMAVLink. Prototype PWM motor control, telemetry systems, and Pixhawk-Raspberry Pi communication for operations.",
     },
@@ -121,6 +155,8 @@ export const DATA = {
       description:
         "Managed budgets, inventory, and external communications using Excel to support club operations. Successfully obtained sponsor relations with Red Bull, Yonex, 19 Feet, and the Ontario Badminton Association.",
     },
+  ],
+  volunteering: [
     {
       company: "Biomedical Engineering Society (BMES TMU)",
       href: "",
@@ -133,8 +169,6 @@ export const DATA = {
       description:
         "Coordinate room booking, materials, and budgeting. Successfully assisted in the setup of a major bionics conference featuring guest speakers and over 80 attendees.",
     },
-  ],
-  volunteering: [
     {
       company: "TMU Eng Frosh",
       href: "",
@@ -195,6 +229,29 @@ export const DATA = {
         },
       ],
       image: "/pocketplayer.png",
+      video: "",
+    },
+    {
+      title: "BYTE Website",
+      href: "https://tmubyte.com/",
+      dates: "",
+      active: true,
+      description:
+        "Contributed as a frontend developer to the BYTE website using React, TypeScript, and Tailwind CSS. Implemented a scrolling marquee for sponsor logos, improved chatbot visibility, added event and error logging for UI interactions, and continuously debugged frontend issues. Also updated hero typography, section styling, slideshow controls, and mobile/desktop hover and touch effects.",
+      technologies: ["TypeScript", "JavaScript", "CSS", "HTML"],
+      links: [
+        {
+          type: "Website",
+          href: "https://tmubyte.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/BYTE-TMU/BYTE_site",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/byte-website.png",
       video: "",
     },
     {
@@ -298,7 +355,7 @@ export const DATA = {
       dates: "",
       location: "",
       description:
-        "Built LevelUp, a gamified career-planning platform using React and Node.js that uses Generative AI to transform resumes into 5-7 personalized career timelines. Helped engineer Python backend logic with the Siray.ai API to analyze skills, identify gaps against job market data, and generate career roadmaps. Placed 2nd in the Career Development competition category and reduced AI token usage through prompt optimization.",
+        "Built LevelUp, a gamified career-planning platform using React and Node.js that uses Generative AI to transform resumes into 5-7 personalized career timelines. Helped engineer Python backend logic with the Siray.ai API to analyze skills, identify gaps against job market data, and generate career roadmaps. Placed 2nd in the Career Development competition category.",
       image: "",
       technologies: ["Python", "React", "Node.js", "Generative AI"],
       links: [
@@ -334,7 +391,7 @@ export const DATA = {
       description:
         "Participated in a case competition focused on improving on- and off-campus travel safety for students, especially after dark. Proposed TMUAssist, an app designed to generate the safest route to a student's destination using live updates and AI-assisted tracking. Placed 2nd.",
       image: "",
-      technologies: ["AI", "Safety", "Live Updates"],
+      technologies: ["AI", "Safety"],
       links: [],
     },
     {
