@@ -96,14 +96,38 @@ export const DATA = {
           title: "Technical Analyst Intern",
           start: "September 2026",
           end: "Present",
-          description: "",
+          description:
+            "Support Solution Architecture governance meetings by facilitating discussions and tracking documentation and outcomes in Confluence and Jira. Manage solution architecture documentation, models, and objects within iServer, including license management and model promotions. Automate Jira and Outlook/Teams workflows to streamline cross-team communication, reducing manual updates by 80%.",
         },
         {
           title: "Business Analyst Intern",
           start: "May 2026",
           end: "Aug 2026",
           description:
-            "Created onboarding and process documentation in Confluence used across multiple T&O teams supporting Amazon Connect applications. Supported an AI call intelligence project by preparing HLRD documentation and organizing data from SharePoint, Power BI, and Confluence. Collaborated with QA and development teams to streamline testing workflows. Worked with AI-assisted development tools, including Claude Opus and GitHub Copilot agents, to analyze error logs. Supported Amazon Connect POC workflows by creating calls, processing call data through AWS Bedrock and feeding results into Power BI to produce and review analytics.",
+            "Created onboarding and process documentation in Confluence for Technology & Operations (T&O) teams supporting Amazon Connect projects, covering AWS services, file organization, and data preparation for Power BI dashboards. Supported an AI call intelligence project by preparing DRS and HLRD documentation and organizing data across SharePoint, Power BI, and Confluence. Collaborated with QA and development teams to streamline testing workflows using GitHub Copilot agents to analyze error logs and support automated issue investigation. Also supported Amazon Connect prod workflows by creating test calls and feeding results into Power BI for call analytics.",
+        },
+      ],
+    },
+    {
+      company: "BYTE",
+      href: "",
+      badges: [],
+      location: "Toronto, ON",
+      logoUrl: "/byte_logo.png",
+      logoClassName: "bg-black",
+      positions: [
+        {
+          title: "AI/ML Engineer",
+          start: "October 2026",
+          end: "Present",
+          description: "",
+        },
+        {
+          title: "Full-stack developer",
+          start: "June 2026",
+          end: "October 2026",
+          description:
+            "- Developed React, TypeScript, and Tailwind CSS features, including a scrolling sponsor marquee, client-side debug logging for user interactions, and fixes for UI interaction bugs for the company website.\n- Built cloud infrastructure for a containerized CTF platform on a DigitalOcean Ubuntu Droplet using Docker Compose, Caddy, CTFd, MariaDB, Redis, Python, DNS, and HTTPS to deploy and route cybersecurity challenges.",
         },
       ],
     },
@@ -116,20 +140,8 @@ export const DATA = {
       logoUrl: "/aws-sbg.png",
       start: "August 2026",
       end: "Present",
-      description: "",
-    },
-    {
-      company: "BYTE",
-      href: "",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Full-stack developer",
-      logoUrl: "/byte_logo.png",
-      logoClassName: "bg-black",
-      start: "June 2026",
-      end: "Present",
       description:
-        "- Developed React, TypeScript, and Tailwind CSS features, including a scrolling sponsor marquee, client-side debug logging for user interactions, and fixes for UI interaction bugs for the company website.\n- Built cloud infrastructure for a containerized CTF platform on a DigitalOcean Ubuntu Droplet using Docker Compose, Caddy, CTFd, MariaDB, Redis, Python, DNS, and HTTPS to deploy and route cybersecurity challenges.",
+        "Create and facilitate workshops and events for AWS learning. Collaborate with the AWS Student Builder Group organization to complete and teach AWS courses, tools, services, and how to build projects in the AWS builder center.",
     },
     {
       company: "TMUWave",
@@ -143,6 +155,8 @@ export const DATA = {
       description:
         "Lead AUV software development using Raspberry Pi, Pixhawk 6X, and Python. Manage GitHub repositories, pull requests, branching, and documentation across a 6-member team. Develop a Docker-based simulation environment that uses QGroundControl, ArduSub, MAVLink, and PyMAVLink. Prototype PWM motor control, telemetry systems, and Pixhawk-Raspberry Pi communication for operations.",
     },
+  ],
+  volunteering: [
     {
       company: "TMURBC",
       href: "",
@@ -151,12 +165,10 @@ export const DATA = {
       title: "Corporate Relations Associate",
       logoUrl: "/Screenshot 2026-06-26 121953.png",
       start: "Aug 2025",
-      end: "Current",
+      end: "Present",
       description:
         "Managed budgets, inventory, and external communications using Excel to support club operations. Successfully obtained sponsor relations with Red Bull, Yonex, 19 Feet, and the Ontario Badminton Association.",
     },
-  ],
-  volunteering: [
     {
       company: "Biomedical Engineering Society (BMES TMU)",
       href: "",
@@ -165,7 +177,7 @@ export const DATA = {
       title: "Director of Events",
       logoUrl: "/Screenshot 2026-06-26 121858.png",
       start: "Sept 2025",
-      end: "Current",
+      end: "Sept 2026",
       description:
         "Coordinate room booking, materials, and budgeting. Successfully assisted in the setup of a major bionics conference featuring guest speakers and over 80 attendees.",
     },
@@ -177,7 +189,7 @@ export const DATA = {
       title: "Committee Member",
       logoUrl: "/tmuengfrosh.png",
       start: "May 2025",
-      end: "Current",
+      end: "Present",
       description:
         "Helped integrate new university engineering students to TMU through weeklong campus tours, activities, and networking.",
     },
@@ -255,34 +267,33 @@ export const DATA = {
       video: "",
     },
     {
-      title: "LevelUp",
-      href: "https://github.com/r104b/vc-hackathon-2026-LevelUp",
+      title: "Cyber Summit CTF",
+      href: "https://ctfd.tmubyte.com/",
       dates: "",
       active: true,
       description:
-        "Built a gamified career-planning platform that turns a user's resume or profile into 5-7 personalized career timelines, then converts a selected path into a level-based roadmap with milestones, skills, and progress goals. Developed the Python/FastAPI backend for resume parsing, AI-assisted roadmap generation, job-data research, and persistence with Supabase.",
+        "Built and deployed the infrastructure for a student-run cybersecurity CTF supporting 100+ participants. Set up a DigitalOcean Ubuntu server, containerized challenges with Docker Compose, routed traffic with Caddy, and hosted the competition through CTFd, MariaDB, and Redis. Configured DNS, HTTPS, IP-based testing restrictions, container resource limits, and direct-port services for reverse-engineering challenges.",
       technologies: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Python",
-        "FastAPI",
-        "OpenAI API",
-        "Supabase",
-        "TailwindCSS",
+        "DigitalOcean",
+        "Ubuntu",
+        "Docker Compose",
+        "Caddy",
+        "CTFd",
+        "MariaDB",
+        "Redis",
       ],
       links: [
         {
-          type: "Source",
-          href: "https://github.com/r104b/vc-hackathon-2026-LevelUp",
-          icon: <Icons.github className="size-3" />,
+          type: "Website",
+          href: "https://ctfd.tmubyte.com/",
+          icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/levelup.png",
+      image: "/ctf.png",
       video: "",
     },
     {
-      title: "Adaptive Campus Safety App",
+      title: "Campus Safety App",
       href: "https://github.com/r104b/Campus-Safety-App",
       dates: "",
       active: true,
@@ -307,6 +318,33 @@ export const DATA = {
         },
       ],
       image: "/walksafe.png",
+      video: "",
+    },
+    {
+      title: "LevelUp",
+      href: "https://github.com/r104b/vc-hackathon-2026-LevelUp",
+      dates: "",
+      active: true,
+      description:
+        "Built a gamified career-planning platform that turns a user's resume or profile into 5-7 personalized career timelines, then converts a selected path into a level-based roadmap with milestones, skills, and progress goals. Developed the Python/FastAPI backend for resume parsing, AI-assisted roadmap generation, job-data research, and persistence with Supabase.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Python",
+        "FastAPI",
+        "OpenAI API",
+        "Supabase",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/r104b/vc-hackathon-2026-LevelUp",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/levelup.png",
       video: "",
     },
     {

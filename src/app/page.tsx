@@ -24,13 +24,24 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
+                text="Rhea Braich"
               />
               <BlurFadeText
                 className="text-muted-foreground max-w-150 md:text-lg lg:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <Link
+                  href="https://drive.google.com/file/d/1rmqsjGlOXsBba0u7c7vawnTf6VPIvsvy/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-fit items-center gap-1 font-sans md:text-lg lg:text-xl underline underline-offset-4 hover:text-muted-foreground"
+                >
+                  Resume
+                  <ArrowUpRight className="size-[1em]" aria-hidden />
+                </Link>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border rounded-md shadow-lg ring-4 ring-muted">

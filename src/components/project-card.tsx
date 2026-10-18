@@ -29,7 +29,8 @@ function ProjectImage({
       alt={alt}
       className={cn(
         "w-full h-48",
-        contain ? "object-contain bg-black p-2" : "object-cover"
+        contain ? "object-contain bg-black p-2" : "object-cover",
+        src === "/ctf.png" && "object-top"
       )}
       onError={() => setImageError(true)}
     />
