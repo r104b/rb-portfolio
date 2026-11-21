@@ -36,7 +36,7 @@ export const DATA = {
   location: "Toronto, ON",
   locationLink: "https://www.google.com/maps/place/toronto",
   description:
-    "Software Engineering student, current Tech Analyst Intern @ BMO. Interested in Full-Stack Development.",
+    "Computer Engineering student, current Technical Analyst Intern @ BMO. Interested in Full-Stack Development.",
   summary:
     "I love building, designing, and making random personal projects. My interests lie in full‑stack web/app development and exploring cloud engineering. ",
   avatarUrl: "/IMG_3416.jpg",
@@ -46,10 +46,12 @@ export const DATA = {
     { name: "Typescript", icon: Typescript },
     { name: "Node.js", icon: Nodejs },
     { name: "Python", icon: Python },
+    { name: "Rust", icon: undefined },
+    { name: "C", icon: CIcon },
+    { name: "SQL", icon: undefined },
     { name: "Postgres", icon: Postgresql },
     { name: "Docker", icon: Docker },
     { name: "Java", icon: Java },
-    { name: "C", icon: CIcon },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -117,15 +119,9 @@ export const DATA = {
       logoClassName: "bg-black",
       positions: [
         {
-          title: "AI/ML Engineer",
-          start: "October 2026",
-          end: "Present",
-          description: "",
-        },
-        {
-          title: "Full-stack developer",
+          title: "Full-Stack Engineer",
           start: "June 2026",
-          end: "October 2026",
+          end: "Present",
           description:
             "- Developed React, TypeScript, and Tailwind CSS features, including a scrolling sponsor marquee, client-side debug logging for user interactions, and fixes for UI interaction bugs for the company website.\n- Built cloud infrastructure for a containerized CTF platform on a DigitalOcean Ubuntu Droplet using Docker Compose, Caddy, CTFd, MariaDB, Redis, Python, DNS, and HTTPS to deploy and route cybersecurity challenges.",
         },
@@ -210,7 +206,7 @@ export const DATA = {
     {
       school: "Toronto Metropolitan University",
       href: "https://www.torontomu.ca/",
-      degree: "Software Engineering (Honors)",
+      degree: "Computer Engineering (Honours)",
       logoUrl: "/Screenshot 2026-06-26 111541.png",
       start: "2024",
       end: "2029",

@@ -33,7 +33,7 @@ export default function Page() {
               />
               <BlurFade delay={BLUR_FADE_DELAY}>
                 <Link
-                  href="https://drive.google.com/file/d/1rmqsjGlOXsBba0u7c7vawnTf6VPIvsvy/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1dsNnsWBjX8vXffG-AahU39Lf0gV_RJLt/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex w-fit items-center gap-1 font-sans md:text-lg lg:text-xl underline underline-offset-4 hover:text-muted-foreground"
