@@ -119,9 +119,23 @@ export const DATA = {
       logoClassName: "bg-black",
       positions: [
         {
-          title: "Full-Stack Engineer",
-          start: "June 2026",
+          title: "AI/ML Director",
+          start: "November 2026",
           end: "Present",
+        },
+        {
+          title: "AI/ML Engineer",
+          start: "September 2026",
+          end: "November 2026",
+          descriptionTitle: "AI/ML Engineer",
+          description:
+            "Researched LLM persona-breaking attacks and categorized jailbreak techniques, including persuasion, role-play, and multi-turn escalation. Created defender personas and attacker prompts to test robustness, and helped score responses on a 0–2 scale to assess rule violations.",
+        },
+        {
+          title: "Full-Stack Engineer",
+          descriptionTitle: "Full Stack",
+          start: "June 2026",
+          end: "September 2026",
           description:
             "- Developed React, TypeScript, and Tailwind CSS features, including a scrolling sponsor marquee, client-side debug logging for user interactions, and fixes for UI interaction bugs for the company website.\n- Built cloud infrastructure for a containerized CTF platform on a DigitalOcean Ubuntu Droplet using Docker Compose, Caddy, CTFd, MariaDB, Redis, Python, DNS, and HTTPS to deploy and route cybersecurity challenges.",
         },

@@ -14,9 +14,10 @@ import Markdown from "react-markdown";
 
 type Position = {
   title: string;
-  start: string;
+  start?: string;
   end?: string;
   description?: string;
+  descriptionTitle?: string;
 };
 
 type WorkItem = {
@@ -143,9 +144,9 @@ export default function WorkSection({
                           />
                           <div className="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
                             <span>{position.title}</span>
-                            <span className="text-xs tabular-nums whitespace-nowrap">
+                            {position.start && <span className="text-xs tabular-nums whitespace-nowrap">
                               {position.start} - {position.end ?? "Present"}
-                            </span>
+                            </span>}
                           </div>
                         </div>
                       ))}
@@ -179,7 +180,7 @@ export default function WorkSection({
                     .filter((position) => position.description)
                     .map((position) => (
                       <div key={`${position.title}-description`}>
-                        <div className="mb-1 font-medium text-foreground">{position.title}</div>
+                        <div className="mb-1 font-medium text-foreground">{position.descriptionTitle ?? position.title}</div>
                         <Markdown>{position.description}</Markdown>
                       </div>
                     ))}
